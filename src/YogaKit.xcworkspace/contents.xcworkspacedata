@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:YogaKit/yoga/yoga.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:YogaKitSample/YogaKitSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:YogaKit/YogaKit.xcodeproj">
+   </FileRef>
+</Workspace>

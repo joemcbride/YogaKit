@@ -14,10 +14,8 @@
 		F972830F20D737D000F8E4CA /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F972830D20D737D000F8E4CA /* BasicViewController.m */; };
 		F972831020D737D000F8E4CA /* BasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F972830E20D737D000F8E4CA /* BasicViewController.xib */; };
 		F972831320D7396000F8E4CA /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = F972831220D7396000F8E4CA /* MyView.m */; };
-		F972836B20D75F1900F8E4CA /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F972836A20D75F1900F8E4CA /* libyoga.a */; };
-		F97283A020D773BE00F8E4CA /* NSView+Yoga.m in Sources */ = {isa = PBXBuildFile; fileRef = F972839C20D773BE00F8E4CA /* NSView+Yoga.m */; };
-		F97283A120D773BE00F8E4CA /* YGLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F972839E20D773BE00F8E4CA /* YGLayout.m */; };
 		F97283A420D773E000F8E4CA /* YGLayoutExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97283A320D773E000F8E4CA /* YGLayoutExtensions.swift */; };
+		F97283A620D87FD900F8E4CA /* YogaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97283A520D87FD900F8E4CA /* YogaKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,14 +31,9 @@
 		F972830E20D737D000F8E4CA /* BasicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicViewController.xib; sourceTree = "<group>"; };
 		F972831120D7396000F8E4CA /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyView.h; path = ../MyView.h; sourceTree = "<group>"; };
 		F972831220D7396000F8E4CA /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyView.m; path = ../MyView.m; sourceTree = "<group>"; };
-		F972836A20D75F1900F8E4CA /* libyoga.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libyoga.a; path = "../../../../../Library/Developer/Xcode/DerivedData/YogaKit-ajjdxshmfitsgxdsmxsregixjarh/Build/Products/Debug/libyoga.a"; sourceTree = "<group>"; };
-		F972839B20D773BE00F8E4CA /* NSView+Yoga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSView+Yoga.h"; path = "../../YogaKit/YogaKit/NSView+Yoga.h"; sourceTree = "<group>"; };
-		F972839C20D773BE00F8E4CA /* NSView+Yoga.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = "NSView+Yoga.m"; path = "../../YogaKit/YogaKit/NSView+Yoga.m"; sourceTree = "<group>"; };
-		F972839D20D773BE00F8E4CA /* YGLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGLayout.h; path = ../../YogaKit/YogaKit/YGLayout.h; sourceTree = "<group>"; };
-		F972839E20D773BE00F8E4CA /* YGLayout.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = YGLayout.m; path = ../../YogaKit/YogaKit/YGLayout.m; sourceTree = "<group>"; };
-		F972839F20D773BE00F8E4CA /* YGLayout+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "YGLayout+Private.h"; path = "../../YogaKit/YogaKit/YGLayout+Private.h"; sourceTree = "<group>"; };
 		F97283A220D773E000F8E4CA /* YogaKitSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YogaKitSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		F97283A320D773E000F8E4CA /* YGLayoutExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGLayoutExtensions.swift; sourceTree = "<group>"; };
+		F97283A520D87FD900F8E4CA /* YogaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YogaKit.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/YogaKit-ajjdxshmfitsgxdsmxsregixjarh/Build/Products/Debug/YogaKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F972836B20D75F1900F8E4CA /* libyoga.a in Frameworks */,
+				F97283A620D87FD900F8E4CA /* YogaKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,11 +68,6 @@
 		F97282F520D7361500F8E4CA /* YogaKitSample */ = {
 			isa = PBXGroup;
 			children = (
-				F972839B20D773BE00F8E4CA /* NSView+Yoga.h */,
-				F972839C20D773BE00F8E4CA /* NSView+Yoga.m */,
-				F972839D20D773BE00F8E4CA /* YGLayout.h */,
-				F972839E20D773BE00F8E4CA /* YGLayout.m */,
-				F972839F20D773BE00F8E4CA /* YGLayout+Private.h */,
 				F972831120D7396000F8E4CA /* MyView.h */,
 				F972831220D7396000F8E4CA /* MyView.m */,
 				F97282F620D7361500F8E4CA /* AppDelegate.h */,
@@ -108,7 +96,7 @@
 		F972830720D7369000F8E4CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F972836A20D75F1900F8E4CA /* libyoga.a */,
+				F97283A520D87FD900F8E4CA /* YogaKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,8 +175,6 @@
 			files = (
 				F972831320D7396000F8E4CA /* MyView.m in Sources */,
 				F97282FB20D7361500F8E4CA /* main.m in Sources */,
-				F97283A020D773BE00F8E4CA /* NSView+Yoga.m in Sources */,
-				F97283A120D773BE00F8E4CA /* YGLayout.m in Sources */,
 				F97283A420D773E000F8E4CA /* YGLayoutExtensions.swift in Sources */,
 				F97282F820D7361500F8E4CA /* AppDelegate.m in Sources */,
 				F972830F20D737D000F8E4CA /* BasicViewController.m in Sources */,
@@ -299,8 +285,9 @@
 		F972830520D7361500F8E4CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				HEADER_SEARCH_PATHS = (
@@ -324,8 +311,9 @@
 		F972830620D7361500F8E4CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				HEADER_SEARCH_PATHS = (

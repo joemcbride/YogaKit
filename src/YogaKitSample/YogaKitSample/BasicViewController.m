@@ -8,7 +8,7 @@
 
 #import "BasicViewController.h"
 #import "MyView.h"
-#import "NSView+Yoga.h"
+#import <YogaKit/NSView+Yoga.h>
 
 @interface BasicViewController ()
 
@@ -40,18 +40,18 @@
     child1.backgroundColor = [NSColor greenColor];
     child1.yoga.isEnabled = YES;
     child1.yoga.position = YGPositionTypeRelative;
-//    child1.yoga.width = YGPointValue(100);
-//    child1.yoga.height = YGPointValue(100);
-//    child1.yoga.flexGrow = 2;
+    child1.yoga.width = YGPointValue(100);
+    child1.yoga.height = YGPointValue(100);
+    child1.yoga.flexGrow = 1;
 
     MyView *child2 = [MyView new];
     child2.name = @"child 2";
     child2.backgroundColor = [NSColor blueColor];
     child2.yoga.isEnabled = YES;
     child2.yoga.position = YGPositionTypeRelative;
-//    child2.yoga.width = YGPointValue(100);
-//    child2.yoga.height = YGPointValue(100);
-//    child2.yoga.flexGrow = 0;
+    child2.yoga.width = YGPointValue(100);
+    child2.yoga.height = YGPointValue(100);
+    child2.yoga.flexGrow = 1;
 //    child2.yoga.margin = YGPointValue(10.0);
 
     MyView *child3 = [MyView new];
@@ -60,8 +60,9 @@
     child3.yoga.isEnabled = YES;
 //    child3.yoga.position = YGPositionTypeAbsolute;
     child3.yoga.isIncludedInLayout = YES;
-//    child3.yoga.width = YGPointValue(50);
-//    child3.yoga.height = YGPointValue(50);
+    child3.yoga.width = YGPointValue(50);
+    child3.yoga.height = YGPointValue(50);
+    child2.yoga.flexGrow = 2;
 //    child3.frame = (CGRect) {
 //        .origin = {
 //            .x = 0,
@@ -74,7 +75,7 @@
 //    };
 
     [root addSubview:child1];
-//    [root addSubview:child2];
+    [root addSubview:child2];
     [root addSubview:child3];
 
     [root.yoga applyLayoutPreservingOrigin:NO];

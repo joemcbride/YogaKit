@@ -13,7 +13,7 @@
 		F97282A820D7250800F8E4CA /* NSView+Yoga.h in Headers */ = {isa = PBXBuildFile; fileRef = F97282A620D7250800F8E4CA /* NSView+Yoga.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F97282A920D7250800F8E4CA /* NSView+Yoga.m in Sources */ = {isa = PBXBuildFile; fileRef = F97282A720D7250800F8E4CA /* NSView+Yoga.m */; };
 		F97282AA20D7250800F8E4CA /* NSView+Yoga.m in Sources */ = {isa = PBXBuildFile; fileRef = F97282A720D7250800F8E4CA /* NSView+Yoga.m */; };
-		F97282AF20D726B000F8E4CA /* YGLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F97282AE20D726B000F8E4CA /* YGLayout+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F97282AF20D726B000F8E4CA /* YGLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F97282AE20D726B000F8E4CA /* YGLayout+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F97282B220D7270400F8E4CA /* YGLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F97282B020D7270400F8E4CA /* YGLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F97282B320D7270400F8E4CA /* YGLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F97282B120D7270400F8E4CA /* YGLayout.m */; };
 		F97282B420D7270400F8E4CA /* YGLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F97282B120D7270400F8E4CA /* YGLayout.m */; };
@@ -124,8 +124,8 @@
 			files = (
 				F97282A820D7250800F8E4CA /* NSView+Yoga.h in Headers */,
 				F97282B220D7270400F8E4CA /* YGLayout.h in Headers */,
-				F97282AF20D726B000F8E4CA /* YGLayout+Private.h in Headers */,
 				F972825E20D723F800F8E4CA /* YogaKit.h in Headers */,
+				F97282AF20D726B000F8E4CA /* YGLayout+Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,10 +17,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     _windowController = [MainWindowController new];
-
     [_windowController.window makeKeyAndOrderFront:nil];
 }
-
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
 }

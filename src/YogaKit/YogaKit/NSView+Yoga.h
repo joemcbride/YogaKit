@@ -32,6 +32,8 @@ typedef void (^YGLayoutConfigurationBlock)(YGLayout *layout);
 - (void)configureLayoutWithBlock:(YGLayoutConfigurationBlock)block
 NS_SWIFT_NAME(configureLayout(block:));
 
+- (CGSize)sizeThatfits:(CGSize)size;
+
 @end
 
 NS_ASSUME_NONNULL_END

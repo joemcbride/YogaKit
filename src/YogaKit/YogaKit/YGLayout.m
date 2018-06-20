@@ -331,12 +331,10 @@ static YGSize YGMeasureView(
   const CGFloat constrainedHeight = (heightMode == YGMeasureModeUndefined) ? CGFLOAT_MAX: height;
 
   NSView *view = (__bridge NSView*) YGNodeGetContext(node);
-//  const CGSize sizeThatFits = [view sizeThatfits:(CGSize) {
-//    .width = constrainedWidth,
-//    .height = constrainedHeight,
-//  }];
-
-  const CGSize sizeThatFits = view.frame.size;
+  const CGSize sizeThatFits = [view sizeThatfits:(CGSize) {
+    .width = constrainedWidth,
+    .height = constrainedHeight,
+  }];
 
   return (YGSize) {
     .width = (float)YGSanitizeMeasurement(constrainedWidth, (CGFloat)sizeThatFits.width, widthMode),

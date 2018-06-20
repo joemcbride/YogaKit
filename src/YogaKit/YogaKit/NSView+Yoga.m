@@ -37,4 +37,8 @@ static const void *kYGYogaAssociatedKey = &kYGYogaAssociatedKey;
     }
 }
 
+- (CGSize)sizeThatfits:(CGSize)size {
+    return self.frame.size;
+}
+
 @end

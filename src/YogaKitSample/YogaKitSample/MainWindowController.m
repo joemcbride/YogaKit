@@ -10,7 +10,9 @@
 #import "BasicViewController.h"
 
 @interface MainWindowController ()
+
 @property (nonatomic, strong) BasicViewController* basics;
+
 @end
 
 @implementation MainWindowController
@@ -25,16 +27,11 @@
 
     self.basics = [BasicViewController new];
     self.window.contentView = self.basics.view;
-    self.window.contentView.autoresizingMask = NSViewHeightSizable|NSViewWidthSizable;
-    [self.basics updateLayout];
-}
-
-- (void)awakeFromNib {
-    self.window.delegate = self;
+    [self.basics applyYogaLayout];
 }
 
 - (void)windowDidResize:(NSNotification *)notification {
-    [self.basics updateLayout];
+    [self.basics applyYogaLayout];
 }
 
 @end

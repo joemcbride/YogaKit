@@ -1,14 +1,22 @@
 //
-//  MyView.m
+//  BasicView.m
 //  YogaKitSample
 //
-//  Created by Joseph McBride on 6/17/18.
+//  Created by Joseph McBride on 6/19/18.
 //  Copyright © 2018 Outlander. All rights reserved.
 //
 
-#import "MyView.h"
+#import "BasicView.h"
 
-@implementation MyView
+@implementation BasicView
+
+- (instancetype)init {
+    self = [super init];
+
+    self.autoresizingMask = NSViewHeightSizable|NSViewWidthSizable;
+
+    return self;
+}
 
 - (BOOL)isFlipped {
     return TRUE;

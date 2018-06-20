@@ -7,7 +7,7 @@
 //
 
 #import "BasicViewController.h"
-#import "MyView.h"
+#import "BasicView.h"
 #import <YogaKit/NSView+Yoga.h>
 
 @interface BasicViewController ()
@@ -15,12 +15,11 @@
 
 @implementation BasicViewController
 
-- (id)init {
-    self = [super initWithNibName:NSStringFromClass([self class]) bundle:nil];
-    return self;
+-(void)loadView {
+    self.view = [BasicView new];
 }
 
-- (void)updateLayout {
+- (void)applyYogaLayout {
     self.view.yoga.width = YGPointValue(self.view.frame.size.width);
     self.view.yoga.height = YGPointValue(self.view.frame.size.height);
     [self.view.yoga applyLayoutPreservingOrigin:YES];
@@ -29,33 +28,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    MyView *root = (MyView *)self.view;
+    BasicView *root = (BasicView *)self.view;
     root.name = @"root";
     root.backgroundColor = [NSColor redColor];
-    root.yoga.isEnabled = YES;
-    root.yoga.width = YGPointValue(self.view.frame.size.width);
-    root.yoga.height = YGPointValue(self.view.frame.size.height);
-    root.yoga.alignItems = YGAlignFlexStart;
-    root.yoga.justifyContent = YGJustifyFlexStart;
-    root.yoga.flexDirection = YGFlexDirectionColumn;
-    root.yoga.position = YGPositionTypeRelative;
+
+    [root configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+        layout.isEnabled = YES;
+        layout.width = YGPointValue(self.view.frame.size.width);
+        layout.height = YGPointValue(self.view.frame.size.height);
+        layout.alignItems = YGAlignFlexStart;
+        layout.justifyContent = YGJustifyFlexStart;
+        layout.flexDirection = YGFlexDirectionRow;
+        layout.position = YGPositionTypeRelative;
+    }];
 
     [self addChild:@"Child 1" color:[NSColor greenColor]];
     [self addChild:@"Child 2" color:[NSColor blueColor]];
     [self addChild:@"Child 3" color:[NSColor purpleColor]];
 
-    [root.yoga applyLayoutPreservingOrigin:YES];
+    [root.yoga applyLayoutPreservingOrigin:NO];
 }
 
 - (void)addChild:(NSString *)name color:(NSColor *)color {
-    MyView *child = [MyView new];
+
+    BasicView *child = [BasicView new];
     child.name = name;
     child.backgroundColor = color;
-    child.yoga.isEnabled = YES;
-    child.yoga.width = YGPointValue(100);
-    child.yoga.height = YGPointValue(40);
-    child.yoga.flexGrow = 1;
-    child.yoga.flexShrink = 1;
+    [child configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+        layout.isEnabled = YES;
+        layout.width = YGPointValue(100);
+        layout.height = YGPointValue(40);
+        layout.flexGrow = 1;
+        layout.flexShrink = 1;
+    }];
 
     [self.view addSubview:child];
 }

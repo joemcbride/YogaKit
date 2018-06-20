@@ -12,12 +12,11 @@
 		F97282FD20D7361500F8E4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F97282FC20D7361500F8E4CA /* Assets.xcassets */; };
 		F972830020D7361500F8E4CA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97282FE20D7361500F8E4CA /* MainMenu.xib */; };
 		F972830F20D737D000F8E4CA /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F972830D20D737D000F8E4CA /* BasicViewController.m */; };
-		F972831020D737D000F8E4CA /* BasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F972830E20D737D000F8E4CA /* BasicViewController.xib */; };
-		F972831320D7396000F8E4CA /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = F972831220D7396000F8E4CA /* MyView.m */; };
 		F97283A420D773E000F8E4CA /* YGLayoutExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97283A320D773E000F8E4CA /* YGLayoutExtensions.swift */; };
 		F97283A620D87FD900F8E4CA /* YogaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97283A520D87FD900F8E4CA /* YogaKit.framework */; };
 		F97283AD20D9AFE400F8E4CA /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97283AB20D9AFE400F8E4CA /* MainWindowController.m */; };
 		F97283AE20D9AFE400F8E4CA /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97283AC20D9AFE400F8E4CA /* MainWindowController.xib */; };
+		F97283B120D9E09A00F8E4CA /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = F97283B020D9E09A00F8E4CA /* BasicView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,15 +29,14 @@
 		F972830120D7361500F8E4CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F972830C20D737D000F8E4CA /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
 		F972830D20D737D000F8E4CA /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
-		F972830E20D737D000F8E4CA /* BasicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicViewController.xib; sourceTree = "<group>"; };
-		F972831120D7396000F8E4CA /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyView.h; path = ../MyView.h; sourceTree = "<group>"; };
-		F972831220D7396000F8E4CA /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyView.m; path = ../MyView.m; sourceTree = "<group>"; };
 		F97283A220D773E000F8E4CA /* YogaKitSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YogaKitSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		F97283A320D773E000F8E4CA /* YGLayoutExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGLayoutExtensions.swift; sourceTree = "<group>"; };
 		F97283A520D87FD900F8E4CA /* YogaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YogaKit.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/YogaKit-ajjdxshmfitsgxdsmxsregixjarh/Build/Products/Debug/YogaKit.framework"; sourceTree = "<group>"; };
 		F97283AA20D9AFE400F8E4CA /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
 		F97283AB20D9AFE400F8E4CA /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		F97283AC20D9AFE400F8E4CA /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		F97283AF20D9E09A00F8E4CA /* BasicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicView.h; sourceTree = "<group>"; };
+		F97283B020D9E09A00F8E4CA /* BasicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,22 +71,20 @@
 		F97282F520D7361500F8E4CA /* YogaKitSample */ = {
 			isa = PBXGroup;
 			children = (
-				F972831120D7396000F8E4CA /* MyView.h */,
-				F972831220D7396000F8E4CA /* MyView.m */,
 				F97282F620D7361500F8E4CA /* AppDelegate.h */,
 				F97282F720D7361500F8E4CA /* AppDelegate.m */,
+				F97283AF20D9E09A00F8E4CA /* BasicView.h */,
+				F97283B020D9E09A00F8E4CA /* BasicView.m */,
 				F97282FC20D7361500F8E4CA /* Assets.xcassets */,
 				F97282FE20D7361500F8E4CA /* MainMenu.xib */,
-				F972830120D7361500F8E4CA /* Info.plist */,
-				F97282F920D7361500F8E4CA /* Supporting Files */,
 				F972830C20D737D000F8E4CA /* BasicViewController.h */,
 				F972830D20D737D000F8E4CA /* BasicViewController.m */,
-				F972830E20D737D000F8E4CA /* BasicViewController.xib */,
 				F97283A320D773E000F8E4CA /* YGLayoutExtensions.swift */,
 				F97283A220D773E000F8E4CA /* YogaKitSample-Bridging-Header.h */,
 				F97283AA20D9AFE400F8E4CA /* MainWindowController.h */,
 				F97283AB20D9AFE400F8E4CA /* MainWindowController.m */,
 				F97283AC20D9AFE400F8E4CA /* MainWindowController.xib */,
+				F97282F920D7361500F8E4CA /* Supporting Files */,
 			);
 			path = YogaKitSample;
 			sourceTree = "<group>";
@@ -96,6 +92,7 @@
 		F97282F920D7361500F8E4CA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F972830120D7361500F8E4CA /* Info.plist */,
 				F97282FA20D7361500F8E4CA /* main.m */,
 			);
 			name = "Supporting Files";
@@ -171,7 +168,6 @@
 				F97282FD20D7361500F8E4CA /* Assets.xcassets in Resources */,
 				F972830020D7361500F8E4CA /* MainMenu.xib in Resources */,
 				F97283AE20D9AFE400F8E4CA /* MainWindowController.xib in Resources */,
-				F972831020D737D000F8E4CA /* BasicViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,9 +179,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F97283AD20D9AFE400F8E4CA /* MainWindowController.m in Sources */,
-				F972831320D7396000F8E4CA /* MyView.m in Sources */,
 				F97282FB20D7361500F8E4CA /* main.m in Sources */,
 				F97283A420D773E000F8E4CA /* YGLayoutExtensions.swift in Sources */,
+				F97283B120D9E09A00F8E4CA /* BasicView.m in Sources */,
 				F97282F820D7361500F8E4CA /* AppDelegate.m in Sources */,
 				F972830F20D737D000F8E4CA /* BasicViewController.m in Sources */,
 			);

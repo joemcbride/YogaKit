@@ -10,6 +10,6 @@
 
 @interface BasicViewController : NSViewController
 
-- (void)updateLayout;
+- (void)applyYogaLayout;
 
 @end

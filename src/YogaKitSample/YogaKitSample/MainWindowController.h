@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface MainWindowController : NSWindowController <NSWindowDelegate>
+@interface MainWindowController : NSWindowController
 
 @end

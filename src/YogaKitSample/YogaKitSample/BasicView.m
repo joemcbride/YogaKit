@@ -12,14 +12,12 @@
 
 - (instancetype)init {
     self = [super init];
-
     self.autoresizingMask = NSViewHeightSizable|NSViewWidthSizable;
-
     return self;
 }
 
 - (BOOL)isFlipped {
-    return TRUE;
+    return YES;
 }
 
 - (void)drawRect:(NSRect)dirtyRect {

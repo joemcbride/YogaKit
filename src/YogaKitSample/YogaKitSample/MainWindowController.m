@@ -27,6 +27,7 @@
 
     self.basics = [BasicViewController new];
     self.window.contentView = self.basics.view;
+    self.window.contentView.wantsLayer = YES;
     [self.basics applyYogaLayout];
 }
 

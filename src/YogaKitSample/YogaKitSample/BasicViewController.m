@@ -38,31 +38,34 @@
         layout.height = YGPointValue(self.view.frame.size.height);
         layout.alignItems = YGAlignFlexStart;
         layout.justifyContent = YGJustifyFlexStart;
-        layout.flexDirection = YGFlexDirectionRow;
+        layout.flexDirection = YGFlexDirectionColumn;
         layout.position = YGPositionTypeRelative;
     }];
 
     [self addChild:@"Child 1" color:[NSColor greenColor]];
-    [self addChild:@"Child 2" color:[NSColor blueColor]];
+    [[self addChild:@"Child 2" color:[NSColor blueColor]] configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+        layout.flexGrow = 1;
+    }];
     [self addChild:@"Child 3" color:[NSColor purpleColor]];
 
     [root.yoga applyLayoutPreservingOrigin:NO];
 }
 
-- (void)addChild:(NSString *)name color:(NSColor *)color {
+- (BasicView *)addChild:(NSString *)name color:(NSColor *)color {
 
     BasicView *child = [BasicView new];
     child.name = name;
     child.backgroundColor = color;
     [child configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
-        layout.width = YGPointValue(100);
         layout.height = YGPointValue(40);
-        layout.flexGrow = 1;
-        layout.flexShrink = 1;
+        layout.flexGrow = 0;
+        layout.alignSelf = YGAlignStretch;
     }];
 
     [self.view addSubview:child];
+
+    return child;
 }
 
 @end

@@ -7,19 +7,18 @@
 //
 
 #import "AppDelegate.h"
-#import "BasicViewController.h"
+#import "MainWindowController.h"
 
 @interface AppDelegate ()
-
-@property (weak) IBOutlet NSWindow *window;
-@property BasicViewController *controller;
+@property MainWindowController *windowController;
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    self.controller = [[BasicViewController alloc] init];
-    self.window.contentView = self.controller.view;
+    _windowController = [MainWindowController new];
+
+    [_windowController.window makeKeyAndOrderFront:nil];
 }
 
 

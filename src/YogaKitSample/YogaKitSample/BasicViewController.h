@@ -10,4 +10,6 @@
 
 @interface BasicViewController : NSViewController
 
+- (void)updateLayout;
+
 @end

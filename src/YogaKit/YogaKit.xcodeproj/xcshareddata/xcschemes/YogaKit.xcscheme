@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F972832F20D75CCA00F8E4CA"
+               BuildableName = "libyoga.a"
+               BlueprintName = "yoga"
+               ReferencedContainer = "container:yoga/yoga.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "F972824C20D723F800F8E4CA"
                BuildableName = "YogaKit.framework"
                BlueprintName = "YogaKit"

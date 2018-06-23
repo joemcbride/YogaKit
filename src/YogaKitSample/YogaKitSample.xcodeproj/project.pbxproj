@@ -13,11 +13,26 @@
 		F972830020D7361500F8E4CA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97282FE20D7361500F8E4CA /* MainMenu.xib */; };
 		F972830F20D737D000F8E4CA /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F972830D20D737D000F8E4CA /* BasicViewController.m */; };
 		F97283A420D773E000F8E4CA /* YGLayoutExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97283A320D773E000F8E4CA /* YGLayoutExtensions.swift */; };
-		F97283A620D87FD900F8E4CA /* YogaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97283A520D87FD900F8E4CA /* YogaKit.framework */; };
 		F97283AD20D9AFE400F8E4CA /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97283AB20D9AFE400F8E4CA /* MainWindowController.m */; };
 		F97283AE20D9AFE400F8E4CA /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97283AC20D9AFE400F8E4CA /* MainWindowController.xib */; };
 		F97283B120D9E09A00F8E4CA /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = F97283B020D9E09A00F8E4CA /* BasicView.m */; };
+		F97283CD20DDDB5B00F8E4CA /* YogaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97283A520D87FD900F8E4CA /* YogaKit.framework */; };
+		F97283CE20DDDB5B00F8E4CA /* YogaKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F97283A520D87FD900F8E4CA /* YogaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F97283CF20DDDB5B00F8E4CA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F97283CE20DDDB5B00F8E4CA /* YogaKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F97282F320D7361500F8E4CA /* YogaKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F97283A620D87FD900F8E4CA /* YogaKit.framework in Frameworks */,
+				F97283CD20DDDB5B00F8E4CA /* YogaKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +131,7 @@
 				F97282EF20D7361500F8E4CA /* Sources */,
 				F97282F020D7361500F8E4CA /* Frameworks */,
 				F97282F120D7361500F8E4CA /* Resources */,
+				F97283CF20DDDB5B00F8E4CA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

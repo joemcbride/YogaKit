@@ -13,11 +13,12 @@
 		F97282A820D7250800F8E4CA /* NSView+Yoga.h in Headers */ = {isa = PBXBuildFile; fileRef = F97282A620D7250800F8E4CA /* NSView+Yoga.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F97282A920D7250800F8E4CA /* NSView+Yoga.m in Sources */ = {isa = PBXBuildFile; fileRef = F97282A720D7250800F8E4CA /* NSView+Yoga.m */; };
 		F97282AA20D7250800F8E4CA /* NSView+Yoga.m in Sources */ = {isa = PBXBuildFile; fileRef = F97282A720D7250800F8E4CA /* NSView+Yoga.m */; };
-		F97282AF20D726B000F8E4CA /* YGLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F97282AE20D726B000F8E4CA /* YGLayout+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F97282B220D7270400F8E4CA /* YGLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F97282B020D7270400F8E4CA /* YGLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F97282B320D7270400F8E4CA /* YGLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F97282B120D7270400F8E4CA /* YGLayout.m */; };
 		F97282B420D7270400F8E4CA /* YGLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F97282B120D7270400F8E4CA /* YGLayout.m */; };
 		F972836D20D764A100F8E4CA /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F972836C20D764A100F8E4CA /* libyoga.a */; };
+		F97283C120DDD48900F8E4CA /* libyoga.a in Headers */ = {isa = PBXBuildFile; fileRef = F972836C20D764A100F8E4CA /* libyoga.a */; };
+		F97283C620DDDA0D00F8E4CA /* YGLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F97282AE20D726B000F8E4CA /* YGLayout+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,7 +126,8 @@
 				F97282A820D7250800F8E4CA /* NSView+Yoga.h in Headers */,
 				F97282B220D7270400F8E4CA /* YGLayout.h in Headers */,
 				F972825E20D723F800F8E4CA /* YogaKit.h in Headers */,
-				F97282AF20D726B000F8E4CA /* YGLayout+Private.h in Headers */,
+				F97283C620DDDA0D00F8E4CA /* YGLayout+Private.h in Headers */,
+				F97283C120DDD48900F8E4CA /* libyoga.a in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -309,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -351,6 +355,7 @@
 		F972826220D723F800F8E4CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -385,6 +390,7 @@
 		F972826320D723F800F8E4CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
